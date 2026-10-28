@@ -1,10 +1,35 @@
 body {
-    color: violet;
+    font-family: sans-serif;
+    color: #3b2f2f;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfbf7;
 }
 
-p
-{
-    color: slateblue}
+header nav a {
+    color: #6f4e37;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-.color {color: rgb(46, 226, 43)
-fond-size 12px; }
+.categorias ul li a {
+    color: #8b5a2b;
+    text-decoration: none;
+}
+
+footer a {
+    color: #a0816c;
+    text-decoration: none;
+}
+
+
+
+.enlace-comprar {
+    color: #2e7d32; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
