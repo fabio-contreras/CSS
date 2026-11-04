@@ -1,4 +1,8 @@
-body {
+* {
+    box-sizing: border-box;
+}
+body {background-color: #6f4e37;}
+body { background-color: #3b2f2f;
     font-family: sans-serif;
     color: #3b2f2f;
     margin: 0;
@@ -17,19 +21,56 @@ header nav a {
     text-decoration: none;
 }
 
-footer a {
+
+
+footer{
     color: #a0816c;
     text-decoration: none;
 }
 
-
-
 .enlace-comprar {
-    color: #2e7d32; 
+    color: #2e7d32;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+header {
+    background-color: #2e7d32;
+}
+header {
+    background-color: #f3e5ab;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+header {
+    background-color: #0c0b06;
+    background-image: url("cafe-granos.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+main{
+    background-color: #eb0808;
+}
+
+aside{
+    background-color: #58e600;
+}
+
+footer{
+     background-color: #2e7d32;
+}
+
+.producto {
+    padding: 20px;
+    margin: 15px auto;
+    border: 1px solid #ccc;
 }
