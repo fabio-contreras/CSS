@@ -17,6 +17,10 @@
     --color-amarillo: #b7b918;
     --espacio-grande: 30px;
     --espacio-medio: 15px;
+
+    /* Variables nuevas para la actividad */
+    --color-primario: var(--color-verdeoscuro);
+    --color-secundario: var(--color-mostasa);
 }
 
 body {
@@ -29,9 +33,37 @@ header nav a {
     font-weight: bold;
 }
 
+/* ===== MENÚ LATERAL (aside) ===== */
+.categorias ul {
+    list-style: none;
+    padding: 0;
+}
+
 .categorias ul li a {
+    display: block;
+    padding: 8px 12px;
     color: var(--color-mostasa);
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* :hover → cambia fondo y color de texto */
+.categorias ul li a:hover {
+    background-color: var(--color-primario);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ::before → indicador visual antes de cada categoría */
+.categorias ul li a::before {
+    content: "• ";
+    color: var(--color-secundario);
+}
+
+/* :focus → contorno visible para navegación con Tab */
+.categorias ul li a:focus {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 2px;
 }
 
 footer a {
@@ -39,16 +71,34 @@ footer a {
     text-decoration: none;
 }
 
+/* ===== BOTÓN DE COMPRA ===== */
 .enlace-comprar {
-    color: var(--color-verde);
+    display: inline-block; /* necesario para que :active con transform funcione */
+    padding: 10px 16px;
+    background-color: var(--color-verde);
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* :hover → cambia el fondo */
+.enlace-comprar:hover {
+    background-color: var(--color-secundario);
+    text-decoration: none;
+}
+
+/* :active → efecto de hundimiento al hacer clic */
+.enlace-comprar:active {
+    transform: scale(0.95);
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+/* ===== ESTRUCTURA ===== */
 header {
     background-color: var(--color-negro);
     background-image: url("cafe-granos.webp");
@@ -70,8 +120,24 @@ footer {
     background-color: var(--color-verdeoscuro);
 }
 
+/* ===== TARJETA DE PRODUCTO ===== */
 .producto {
+    position: relative; /* para ubicar la insignia */
     padding: 20px;
     margin: 15px auto;
     border: 1px solid var(--color-amarillo);
+}
+
+/* ::after → insignia "¡Oferta!" inyectada desde CSS */
+.producto::after {
+    content: "¡Oferta!";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--color-amarillo);
+    color: var(--color-negro);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
