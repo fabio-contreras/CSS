@@ -1,0 +1,21 @@
+.enlace-comprar {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto de aclarado del cuadro al pasar el mouse */
+.enlace-comprar:hover {
+    background-color: #4caf50 !important;
+    color: #ffffff !important;
+}
+
+a:hover {
+    text-decoration: underline;
+}

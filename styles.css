@@ -1,48 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("component/botones.css");
+@import url("component/tarjetas.css");
+@import url("component/menu-lateral.css");
 
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --color: #3b2f2f;
-    --color-cafe: #6f4e37;
-    --color-mostasa: #f77e0d;
-    --color-cafeclaro: #a0816c;
-    --color-verde: #2e7d32;
-    --color-negro: #0c0b06;
-    --color-rojo: #eb0808e0;
-    --color-verdeclaro: #58e600;
-    --color-verdeoscuro: #2e7d32;
-    --color-amarillo: #b7b918;
-    --espacio-grande: 30px;
-    --espacio-medio: 15px;
+    --color: rgb(227, 14, 14);
+    --font-size: 30px;
+    --padding-top: 25px;
+    --padding-bottom: 25px;
+    --padding-right: 18px;
+    --padding-left: 18px;
 }
 
 body {
-    background-color: var(--color);
-}
-
-header nav a {
-    color: var(--color-cafe);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.categorias ul li a {
-    color: var(--color-mostasa);
-    text-decoration: none;
-}
-
-footer a {
-    color: var(--color-cafeclaro);
-    text-decoration: none;
-}
-
-.enlace-comprar {
-    color: var(--color-verde);
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #3b2f2f;
 }
 
 a:hover {
@@ -50,7 +25,7 @@ a:hover {
 }
 
 header {
-    background-color: var(--color-negro);
+    background-color: #0c0b06;
     background-image: url("cafe-granos.webp");
     background-size: cover;
     background-position: center;
@@ -58,20 +33,21 @@ header {
     height: 200px;
 }
 
-main {
-    background-color: var(--color-rojo);
+header nav a {
+    color: #6f4e37;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-aside {
-    background-color: var(--color-verdeclaro);
+main {
+    background-color: #eb0808e0;
 }
 
 footer {
-    background-color: var(--color-verdeoscuro);
+    background-color: #432e7d;
 }
 
-.producto {
-    padding: 20px;
-    margin: 15px auto;
-    border: 1px solid var(--color-amarillo);
+footer a {
+    color: #a0816c;
+    text-decoration: none;
 }
