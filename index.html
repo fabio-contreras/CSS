@@ -9,74 +9,95 @@
 </head>
 
 <body>
+    <div class="app-layout">
 
-    <!-- Encabezado y Menú -->
-    <header>
-        <h1>Café Artesanal</h1>
-        <nav>
-            <a href="#">Inicio</a> |
-            <a href="#">Nuestros Cafés</a> |
-            <a href="#">Nosotros</a> |
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+        <header>
+            <h1>Café Artesanal</h1>
+            <nav>
+                <ul class="nav__list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nuestros Cafés</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <hr>
+        <div class="main-wrapper">
 
-    <!-- Productos de Café -->
-    <div class="productos">
-        <h2>Nuestros Productos</h2>
+            <!-- Categorías -->
+            <aside>
+                <div class="categorias">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Tueste Medio</a></li>
+                        <li><a href="#">Tueste Oscuro</a></li>
+                        <li><a href="#">Grano Entero</a></li>
+                        <li><a href="#">Molido Fino</a></li>
+                    </ul>
+                </div>
+            </aside>
 
-        <div class="card card--destacada">
-            <h3 class="card__title">Café Geisha</h3>
-            <p class="card__description">Notas florales, jazmín y durazno con acidez brillante.</p>
-            <p class="card__price"><strong>Precio: $45.000</strong></p>
-            <a href="#" class="btn">Comprar</a>
-            <a href="#" class="btn btn--secundario">Ver más</a>
+            <!-- Productos de Café -->
+            <main>
+                <h2>Nuestros Productos</h2>
+
+                <div class="catalogo">
+
+                    <div class="card card--destacada">
+                        <h3 class="card__title">Café Geisha</h3>
+                        <p class="card__description">Notas florales, jazmín y durazno con acidez brillante.</p>
+                        <div class="card__price-wrapper">
+                            <span class="card__price-offer">$45.000</span>
+                            <span class="card__price-original">$55.000</span>
+                        </div>
+                        <div>
+                            <a href="#" class="btn">Comprar</a>
+                            <a href="#" class="btn btn--secundario">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">Café Borbón Rosado</h3>
+                        <p class="card__description">Perfil dulce con notas a caramelo y frutos rojos.</p>
+                        <div class="card__price-wrapper">
+                            <span class="card__price-offer">$38.000</span>
+                            <span class="card__price-original">$45.000</span>
+                        </div>
+                        <div>
+                            <a href="#" class="btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">Café Caturra</h3>
+                        <p class="card__description">Cuerpo medio, notas a chocolate amargo y panela.</p>
+                        <div class="card__price-wrapper">
+                            <span class="card__price-offer">$30.000</span>
+                            <span class="card__price-original">$36.000</span>
+                        </div>
+                        <div>
+                            <a href="#" class="btn">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">Café Castillo</h3>
+                        <p class="card__description">Taza balanceada con aroma intenso y residual limpio.</p>
+                        <div class="card__price-wrapper">
+                            <span class="card__price-offer">$25.000</span>
+                            <span class="card__price-original">$30.000</span>
+                        </div>
+                        <div>
+                            <a href="#" class="btn">Comprar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
         </div>
 
-        <br>
-        <div class="card">
-            <h3 class="card__title">Café Borbón Rosado</h3>
-            <p class="card__description">Perfil dulce con notas a caramelo y frutos rojos.</p>
-            <p class="card__price"><strong>Precio: $38.000</strong></p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <br>
-
-        <div class="card">
-            <h3 class="card__title">Café Caturra</h3>
-            <p class="card__description">Cuerpo medio, notas a chocolate amargo y panela.</p>
-            <p class="card__price"><strong>Precio: $30.000</strong></p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <br>
-
-        <div class="card">
-            <h3 class="card__title">Café Castillo</h3>
-            <p class="card__description">Taza balanceada con aroma intenso y residual limpio.</p>
-            <p class="card__price"><strong>Precio: $25.000</strong></p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <hr>
-
-        <!-- Categorías -->
-        <div class="categorias">
-            <h3>Categorías</h3>
-            <ul>
-                <li><a href="#">Tueste Medio</a></li>
-                <li><a href="#">Tueste Oscuro</a></li>
-                <li><a href="#">Grano Entero</a></li>
-                <li><a href="#">Molido Fino</a></li>
-            </ul>
-        </div>
-
-        <hr>
-
-        <!-- Pie de página -->
         <footer>
             <p>&copy; 2026 Café Artesanal. Todos los derechos reservados.</p>
             <p>
@@ -87,6 +108,7 @@
             </p>
         </footer>
 
+    </div>
 </body>
 
 </html>
